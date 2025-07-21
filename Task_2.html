@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #007bff;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: #fff;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .about, .features {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .features {
+      background: #e2e2e2;
+    }
+
+    .features h2, .about h2 {
+      margin-bottom: 30px;
+    }
+
+    .feature-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 250px;
+      padding: 20px;
+      background: #fff;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .feature-box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Landing Page</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Build beautiful websites with HTML and CSS</p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>This landing page is a beginner-friendly project designed to practice layout, design, and CSS basics.</p>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-box">
+      <div class="box">
+        <h3>Responsive Layout</h3>
+        <p>Design that adapts to all screen sizes.</p>
+      </div>
+      <div class="box">
+        <h3>Clean Code</h3>
+        <p>Well-structured HTML and CSS for easy maintenance.</p>
+      </div>
+      <div class="box">
+        <h3>Creative Design</h3>
+        <p>Custom color schemes, fonts, and styles.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us: simran@gmail.com | © 2025 Simran</p>
+  </footer>
+
+</body>
+</html>
