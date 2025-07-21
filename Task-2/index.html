@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamWander - Travel Agency</title>
+  <style>
+    :root {
+      --primary: #00adb5;
+      --background: #121212;
+      --text: #eeeeee;
+      --accent: #ff5722;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    nav {
+      background: #1e1e1e;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .destinations, .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1f1f1f;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #1e1e1e;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DreamWander</h1>
+    <p>Your Journey Begins Here</p>
+  </header>
+
+  <nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#benefits">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="section" id="destinations">
+      <h2>Top Destinations</h2>
+      <div class="destinations">
+        <div class="card">
+          <img src="img1.jpg" alt="Paris">
+          <h3>Paris</h3>
+          <p>Explore the city of love with stunning architecture, cuisine, and culture.</p>
+        </div>
+        <div class="card">
+          <img src="img2.jpg" alt="Bali">
+          <h3>Bali</h3>
+          <p>Relax on sunny beaches and dive into the vibrant Balinese lifestyle.</p>
+        </div>
+        <div class="card">
+          <img src="img3.jpg" alt="New York">
+          <h3>New York</h3>
+          <p>Feel the rush of the Big Apple with its skyline and endless attractions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <h2>Why Travel With Us?</h2>
+      <div class="benefits">
+        <div class="card">
+          <h3>Affordable Packages</h3>
+          <p>Get the best deals with our budget-friendly travel plans.</p>
+        </div>
+        <div class="card">
+          <h3>Expert Guides</h3>
+          <p>Travel with experienced local guides to get the most from your trip.</p>
+        </div>
+        <div class="card">
+          <h3>24/7 Support</h3>
+          <p>We’re here for you anytime during your journey with us.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@dreamwander.com</p>
+      <p>Phone: +91-9157256363</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; DreamWander Travel Agency. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

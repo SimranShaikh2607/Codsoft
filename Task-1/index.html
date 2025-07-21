@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simran I Shaikh - Portfolio</title>
+  <style>
+    :root {
+      --primary: #00bcd4;
+      --accent: #ff4081;
+      --dark: #121212;
+      --light: #eeeeee;
+      --text-light: #cfd8dc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      padding: 50px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0f7fa;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+    }
+
+    .about,
+    .contact,
+    .resume {
+      text-align: center;
+    }
+
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .skills div {
+      background: #1f1f1f;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      color: var(--text-light);
+      transition: transform 0.3s;
+    }
+
+    .skills div:hover {
+      transform: scale(1.05);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.03);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .resume a {
+      background-color: var(--accent);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .resume a:hover {
+      background-color: #ff1c6a;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #000;
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Simran I Shaikh</h1>
+    <p>Creative Developer | UI/UX Enthusiast | Tech Explorer</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <img src="photo.jpg" alt="Simran's Photo">
+    <p>I am Simran I Shaikh, currently pursuing a Bachelor's degree in Computer Engineering from Sigma University. I am passionate about web development, design, and creating smooth user experiences. I specialize in HTML, CSS, JavaScript, and React.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div>HTML & CSS</div>
+    <div>JavaScript (ES6+)</div>
+    <!-- <div>React.js</div> -->
+    <div>UI/UX Design</div>
+    <div>Responsive Layouts</div>
+    <div>Git & GitHub</div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <!-- <img src="project1.jpg" alt="Project 1"> -->
+      <h3>Project One</h3>
+      <p>AI Powered Smart Travel Planner With Budget Estimator</p>
+      <p>Built using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <!-- <img src="project2.jpg" alt="Project 2"> -->
+      <h3>Project Two</h3>
+      <p>Android Smart City Travelling</p>
+      <p>Built using HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
+
+  <section class="resume">
+    <h2>Resume</h2>
+    <a href="resume.jpg" download>Download My Resume (PDF)</a>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: simran@gmail.com</p>
+    <p>Phone: +91-9157256363</p>
+  </section>
+
+  <footer>
+    <p>&copy; Simran I Shaikh</p>
+  </footer>
+
+</body>
+</html>
